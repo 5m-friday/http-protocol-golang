@@ -88,7 +88,7 @@ meaning if the client made a request, it can generally know how the server respo
 the result of his action by simply getting back a `Status Code` in the response.
 
 Status Codes usually come hand in hand with Reason Phrases. So a Status Code is made up of:
-`NUMBER``␣``REASON PHRASE`, something like:
+`NUMBER` `␣` `REASON PHRASE`, something like:
 
 - `200 OK`
 - `400 Bad Request`
