@@ -113,6 +113,32 @@ speaking you should know:
 - `HTTP 2 - SPDY`
 - `HTTP 3 - QUIC`
 
+### HTTP/1.0 vs HTTP/1.1
+
+##### HTTP/1.0
+
+- born in 1994
+- `connection` is `closed` after every request/response (results in inefficiency)
+
+##### HTTP/1.1
+
+- born in 1996-2015
+- requires `Host` header
+- allows `persistent connections` (multiple request/response on the same connection)
+- introduces the `OPTIONS` method mainly used for CORS
+- has improved caching mechanism
+- introduces `100` status code which lets the client know whether to proceed sending a large request body
+- introduces chuncked transfer encoding
+- introduces `Connection` header
+- introduces enhanced compression support
+- Much more (Generally stick with HTTP/1.1)
+
+##### Useful Links
+
+- [HTTP/1.0 vs HTTP/1.1](https://stackoverflow.com/questions/246859/http-1-0-vs-1-1#:~:text=HTTP%201.1%20also%20allows%20you,the%20connection%20would%20be%20closed.)
+- [Differences between HTTP/1.0 & HTTP/1.1](http://www.ra.ethz.ch/cdstore/www8/data/2136/pdf/pd1.pdf)
+- [Evolution of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Evolution_of_HTTP)
+
 ### REST
 
 Generally speaking REST is nothing, but a community effort & instruction around HTTP on how to
