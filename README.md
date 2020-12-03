@@ -117,12 +117,10 @@ speaking you should know:
 
 ##### HTTP/1.0
 
-- born in 1994
 - `connection` is `closed` after every request/response (results in inefficiency)
 
 ##### HTTP/1.1
 
-- born in 1996-2015
 - requires `Host` header
 - allows `persistent connections` (multiple request/response on the same connection)
 - introduces the `OPTIONS` method mainly used for CORS
